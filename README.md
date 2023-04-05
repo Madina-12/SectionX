@@ -1,4 +1,4 @@
-# Project Title
+## Project Title
 
 ### SectionX App
 
