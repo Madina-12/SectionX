@@ -1,12 +1,12 @@
-import PostsExcerpt from "./features/posts/PostsExcerpt";
-import EditPostForm from "./features/posts/EditPostForm";
-import Pagination from "./features/posts/Pagination";
-import AddSearch from "./features/posts/AddSearch";
-import Header from "./features/Sections/Header";
+import PostsExcerpt from "this/features/posts/PostsExcerpt";
+import EditPostForm from "this/features/posts/EditPostForm";
+import Pagination from "this/features/posts/Pagination";
+import AddSearch from "this/features/posts/AddSearch";
+import Header from "this/features/Sections/Header";
 
-import { openEditPost } from "./features/api/postSlice";
-import { useGetPostsQuery } from "./features/posts/postsSlice";
-import { useGetSectionsQuery } from "./features/Sections/SectionsSlice";
+import { openEditPost } from "this/features/api/postSlice";
+import { useGetPostsQuery } from "this/features/posts/postsSlice";
+import { useGetSectionsQuery } from "this/features/Sections/SectionsSlice";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 
@@ -57,9 +57,9 @@ const PostsList = () => {
   const endIndex = startIndex + 12;
 
   if (isLoading) {
-    content = <p>"Loading..."</p>;
+    content = <div className={styles.content}>"Loading..."</div>;
   } else if (isSuccess && searchText) {
-    const regex = new RegExp(searchText, "g");
+    const regex = new RegExp(searchText, "gi");
     const matchingIds = [];
 
     for (const id of posts.ids) {
@@ -122,6 +122,8 @@ const PostsList = () => {
             onAddPostClicked={onAddPostClicked}
             searchText={searchText}
             onSearchChanged={onSearchChanged}
+            setSearchText={setSearchText}
+            setPageNumber={setPageNumber}
           />
 
           <div className={styles.content}>

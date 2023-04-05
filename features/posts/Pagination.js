@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from "react";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import styles from './Pagination.module.css'
 const Pagination = ({setPageNumber, pageNumber, postsIds}) => {

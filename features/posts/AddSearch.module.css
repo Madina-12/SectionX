@@ -11,11 +11,11 @@
 }
 .addIconDiv{
     height: 1.4rem;
-    width: 1.4rem;
+    width: 1.35rem;
     border-radius: 50%;
     /* background-color: aquamarine; */
     background-color: #FF0000;
-    padding: 0.2rem;
+    padding: 0.18rem;
 }
 .addIcon{
     color: rgb(255, 255, 255);

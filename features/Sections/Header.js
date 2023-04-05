@@ -2,9 +2,7 @@ import styles from "./Header.module.css";
 import Image from "next/image";
 import { useState } from "react";
 const Header = ({ session, signOut }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
-  console.log(session);
+  const [isOpen, setIsOpen] = useState(false); 
   return (
     <div className={styles.header}>
       <div className={styles.logo_name}>

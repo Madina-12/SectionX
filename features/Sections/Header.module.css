@@ -1,7 +1,7 @@
 .header{
     display: flex;
     align-items: center;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
 }
 .logo_name{
     display: flex;
@@ -15,7 +15,7 @@
     position: relative;
     border-radius: 50%;
     overflow: hidden;
-    background-image: url('../../../public/my_logo.webp');
+    background-image: url('/my_logo.webp');
     background-size: contain;
 }
 
@@ -31,7 +31,7 @@
     background-size: contain;
     overflow: hidden;
     border-radius: 50%;
-    background-image: url('../../../public/face_icon.png');
+    background-image: url('/face_icon.png');
     background-repeat: no-repeat;
 }
 .user{

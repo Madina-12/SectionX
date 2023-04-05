@@ -17,7 +17,7 @@
 }
 
 .sectionPage{
-    padding: 0.5rem 1rem 2rem 1rem;
+    padding: 0.4rem 1rem 2rem 1rem;
     background-color: rgb(240, 240, 240);
 }
 .first_row{
@@ -56,10 +56,10 @@
 @media only screen and (min-width:40.063em) and (max-width:64em) {
     .content{
         grid-template-columns: repeat(2, 1fr);
-        /* grid-template-rows: repeat(3, 1fr); */
+        grid-template-rows: repeat(3, 1fr);
     }
     .sectionPage{
-        padding: 1rem 2rem 4rem 2rem;
+        padding: 1rem 2rem 3rem 2rem;
     }
 }
 @media only screen and (min-width:64.063em) and (max-width:120em) {

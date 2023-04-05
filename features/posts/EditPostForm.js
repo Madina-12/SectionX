@@ -23,7 +23,7 @@ const EditPostForm = () => {
     const {...rest} = useSpring({
         from:{rotateX:90,opacity:0},
         to:{rotateX:isOpen?0:90,
-            opacity:isOpen?1:1},
+            opacity:isOpen?1:0,},
         config:{tension:100, friction:10}
     })
     const onTitleChanged = e => setTitle(e.target.value)

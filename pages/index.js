@@ -1,13 +1,13 @@
-import { useGetSectionsQuery } from "./features/Sections/SectionsSlice";
-import SectionsExcert from "./features/Sections/SectionsExcert";
-import AddNewSection from "./features/Sections/AddNewSection";
-import styles from "../styles/Home.module.css";
+import { useGetSectionsQuery } from "this/features/Sections/SectionsSlice";
+import SectionsExcert from "this/features/Sections/SectionsExcert";
+import AddNewSection from "this/features/Sections/AddNewSection";
+import styles from "this/styles/Home.module.css";
 
 import { getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]";
 import { useSession, signIn, signOut} from "next-auth/react";
 
-import Header from "./features/Sections/Header";
+import Header from "this/features/Sections/Header";
 
 const SectionsList = () => {
 
