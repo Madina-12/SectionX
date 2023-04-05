@@ -1,0 +1,32 @@
+.addSection{
+    box-shadow: 0 0 1rem black;
+    width: 12rem;
+    padding: 1rem;
+    margin: auto;
+}
+.add{
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 0 red;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+}
+.title{
+    text-shadow: 1px 1px 0 red;
+    margin-top: 1rem;
+}
+.input{
+    border: 0.1rem solid rgb(116, 114, 114);
+    padding: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgb(116, 114, 114);
+}
+.save{
+    cursor: pointer;
+    padding: 0.3rem 0;
+    font-size: 0.7rem;
+}

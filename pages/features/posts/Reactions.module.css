@@ -1,0 +1,15 @@
+.postReactions{
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(157, 157, 252);
+    padding: 0.1rem 0rem 0rem 0.5rem;
+    border-top-left-radius: 5rem;
+    /* color: ; */
+}
+.postReactions>*:hover{
+    cursor: pointer;
+
+}

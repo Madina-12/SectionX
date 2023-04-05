@@ -1,0 +1,80 @@
+.home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mainSection{
+    max-height: 95vh;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+
+    overflow: auto;
+    box-shadow: 0 0 0.5rem rgb(119, 118, 118);
+}
+
+.sectionPage{
+    padding: 0.5rem 1rem 2rem 1rem;
+    background-color: rgb(240, 240, 240);
+}
+.first_row{
+    display: flex;
+    justify-content: space-between;
+}
+.sectionName{
+    /* margin-top: 1rem; */
+    font-size: 1.5rem;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    
+}
+.total_posts{
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgb(119, 119, 119);
+}
+
+.content{
+    margin-top: 0.5rem;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+    row-gap: 0.5rem;
+    column-gap: 1rem;
+    position: relative;
+    /* overflow: scroll; */
+    /* background-color: red; */
+}
+@media only screen and (max-width:40.063em) {
+    .sectionPage{
+        padding: 1rem 1rem 4rem 1rem;
+    }
+}
+
+@media only screen and (min-width:40.063em) and (max-width:64em) {
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(3, 1fr); */
+    }
+    .sectionPage{
+        padding: 1rem 2rem 4rem 2rem;
+    }
+}
+@media only screen and (min-width:64.063em) and (max-width:120em) {
+    .content{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+}
+@media only screen and (min-width:120.063em) {
+    .mainSection{
+        width: 50rem;
+    }
+    .content{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,73 @@
+.section{
+    position: fixed;
+    z-index: 2;
+}
+.back{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.form{
+    background-color: rgb(85, 196, 248);
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 0.4rem black;
+    justify-content: center;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+.title{
+    margin: 0.4rem;
+    border: none;
+    background-color: rgb(85, 196, 248);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(14, 85, 14);
+    padding: 1rem 2rem;
+    box-shadow: 0rem 0rem 0.4rem black inset;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.title:focus{
+    outline: none;
+    background-color: aqua;
+}
+.content{
+    margin: 0 0.4rem;
+    border: none;
+    background-color: rgb(85, 196, 248);
+    height: 24rem;
+    width: 24rem;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: rgb(90, 89, 89);
+}
+@media screen and (max-width:40em) {
+    .content{
+        height:16rem;
+    width:auto;
+    }
+}
+.content:focus{
+    outline: none;
+    background-color: aqua;
+}
+.submitButton{
+    background-color: rgb(85, 196, 248);
+    border: none;
+    margin: 0.4rem;
+    box-shadow: 0rem 0rem 0.4rem black inset;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    border-radius: 1rem;
+    width: 7rem;
+    padding: 0.3rem;
+    align-self: center;
+}

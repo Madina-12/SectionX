@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');:root{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+@media (max-width:32.063em){
+    :root{
+      font-size:6vw;
+    }
+  }
+  @media (min-width:32.063em) and (max-width:40em){
+    :root{
+      font-size:5vw;
+    }
+  }
+  @media (min-width:32.063em) and (max-width:48em){
+    :root{
+      font-size:3vw;
+    }
+  }
+  
+  @media (min-width:48.063em) and (max-width:64em){
+    :root{
+      font-size:2.5vw;
+    }
+  }
+  @media (min-width:64.063em)  and (max-width:120em){
+    :root{
+      font-size:2vw;
+    }
+  }
+  @media (min-width:120em){
+    :root{
+      font-size:2vh;
+    }
+  }
+  img:not([src=""]) {
+    display: none;
+  }
