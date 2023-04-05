@@ -1,5 +1,4 @@
 ## Project Title
-
 ### SectionX App
 
 ## Description
@@ -24,9 +23,9 @@ cd 12_prisma_auth
 npm install
 ```
 
-3. Setup the database:
-  - Create a new PostgreSQL database and user with the required permissions.
-  - Copy the .env.example file to .env.local and update the DATABASE_URL variable with your own database credentials.
+3. Setup the database and NextAuth:
+  - Create a new PostgreSQL database, OAuth apps for both Github and Google and user with the required permissions.
+  - Copy the .env.example file to .env.local and update the DATABASE_URL, GITHUB_ID,GITHUB_SECRET,GOOGLE_ID,GOOGLE_SECRET variables with your own database credentials.
 
 4. Start the development server:
 ```bash
