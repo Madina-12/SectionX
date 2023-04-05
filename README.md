@@ -1,6 +1,6 @@
 ## Project Title
 
-SectionX App
+# SectionX App
 
 ## Description
 
