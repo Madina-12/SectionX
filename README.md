@@ -1,3 +1,13 @@
+## Project Title
+
+SectionX App
+
+## Description
+
+This is a web application that allows users to create and manage their own sections and posts in a portfolio. Users can log in securely and add new sections or posts, which will only be visible to themselves. The app is built with Next.js, Prisma (PostgreSQL), CSS, JavaScript, React Redux, RTK Query, and NextAuth.
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
