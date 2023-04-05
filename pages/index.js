@@ -12,16 +12,7 @@ import Header from "this/features/Sections/Header";
 const SectionsList = () => {
 
   const { data: session } = useSession();
-  if (!session) {
-    return (<>
-        
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center',flexDirection:'column'}}>
-        <h2>Login is required</h2>
-        <button style={{padding:'0.3rem',backgroundColor:'black', color:'white',fontWeight:'600', cursor:'pointer', fontSize:'1rem', marginTop:'1rem', borderRadius:'0.2rem', border:'none' }} onClick={signIn}>signIn</button>
-      </div>
-      </>
-    );
-  }
+  
 
   const {
     data: sections,
@@ -70,8 +61,12 @@ export async function getServerSideProps(context) {
   const session = await getServerSession(context.req, context.res, authOptions);
   if (!session) {
     //redirect to login page
-    return {props:{}}
-    
+    return { 
+      redirect: {
+        destination: "/api/auth/signin",
+        permanent: false,
+      },
+    }
   }
   
 

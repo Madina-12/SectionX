@@ -97,7 +97,7 @@ const PostsList = () => {
         <title>Portfolio by Muhammad Umar Sherpur</title>
         <meta name="Sherpur" content="by MUHAMMAD UMAR" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/my_logo_icon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
     <section className={styles.home}>
       <div className={styles.mainSection}>
